@@ -1,0 +1,39 @@
+<div class="container mt-5">
+  <h2>Registro</h2>
+  <form (ngSubmit)="register()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo Electrónico</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        [(ngModel)]="user.email"
+        name="email"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input
+        type="password"
+        id="password"
+        class="form-control"
+        [(ngModel)]="user.password"
+        name="password"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="city" class="form-label">Ciudad</label>
+      <input
+        type="text"
+        id="city"
+        class="form-control"
+        [(ngModel)]="user.city"
+        name="city"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+  </form>
+</div>

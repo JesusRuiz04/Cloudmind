@@ -1,0 +1,42 @@
+<div style="min-height: 100vh; margin-left: 0;">
+  <nav class="nav nav-pills bg-dark bg-opacity-75 mb-4 px-3 py-2 rounded shadow">
+  <a class="nav-link text-white me-2" routerLink="/weather/{{ city }}">TIEMPO</a>
+  <a class="nav-link text-white me-2" routerLink="/meals">COMIDAS</a>
+</nav>
+
+<div class="container mt-4">
+  <h2>Planificador de comidas semanal</h2>
+  <form (ngSubmit)="saveMeals()">
+    <table class="table table-bordered table-hover table-striped shadow rounded bg-white bg-opacity-75">
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Comida</th>
+          <th>Cena</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let day of days; let i = index">
+          <td>{{ day }}</td>
+          <td>
+            <input class="form-control" [(ngModel)]="meals[i].lunch" name="lunch{{i}}">
+          </td>
+          <td>
+            <input class="form-control" [(ngModel)]="meals[i].dinner" name="dinner{{i}}">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" type="submit">Guardar comidas</button>
+  </form>
+
+<div *ngIf="successMessage" class="alert alert-success mt-2">
+  {{ successMessage }}
+</div>
+
+  <h3 class="mt-4 text-light">Lista de ingredientes</h3>
+  <form (ngSubmit)="saveIngredients()">
+    <textarea class="form-control mb-2" [(ngModel)]="ingredients" name="ingredients" rows="4" placeholder="Escribe aquí los ingredientes..."></textarea>
+    <button class="btn btn-success" type="submit">Guardar ingredientes</button>
+  </form>
+</div>

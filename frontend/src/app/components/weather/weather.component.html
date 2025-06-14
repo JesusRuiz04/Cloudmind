@@ -1,0 +1,46 @@
+<div style="min-height: 100vh; margin-left: 0;">
+  <nav class="nav nav-pills bg-dark bg-opacity-75 mb-4 px-3 py-2 rounded shadow">
+  <a class="nav-link text-white me-2" routerLink="/weather/{{ city }}">TIEMPO</a>
+  <a class="nav-link text-white me-2" routerLink="/meals">COMIDAS</a>
+</nav>
+
+  <div class="mt-3 px-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2>Previsión del tiempo para <span class="text-primary">{{ city }}</span></h2>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="emailSwitch" [(ngModel)]="emailEnabled" (change)="toggleEmail()">
+        <label class="form-check-label" for="emailSwitch">
+          Enviar correos: <span [ngClass]="{'text-success': emailEnabled, 'text-danger': !emailEnabled}">
+            {{ emailEnabled ? 'Activado' : 'Desactivado' }}
+          </span>
+        </label>
+      </div>
+    </div>
+    <div *ngIf="weather && weather.list && weather.list.length">
+      <div *ngFor="let item of weather.list" class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ item.dt_txt | date:'fullDate':'':'es' }} - {{ item.dt_txt | date:'shortTime':'':'es' }}
+          </h5>
+          <p class="card-text mb-1">
+            <strong>🌡️ Temperatura:</strong>
+            {{ item.main.temprature }} °C
+          </p>
+          <p class="card-text mb-1">
+            <strong>🌤️ Descripción:</strong>
+            {{ item.weather[0].description | titlecase }}
+          </p>
+          <p class="card-text mb-1">
+            <strong>💧 Humedad:</strong>
+            {{ item.main.humidity }} %
+          </p>
+          <p class="card-text mb-1">
+            <strong>💨 Viento:</strong>
+            {{ item.wind.speed }} m/s
+          </p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+  </div>
+</div>

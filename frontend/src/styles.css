@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container.mt-4 {
+  flex: 1 0 auto;
+}
+
+footer.footer {
+  flex-shrink: 0;
+}
+
+/* Efectos para tarjetas y botones */
+.card, .btn {
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+.card:hover, .btn:hover {
+  box-shadow: 0 8px 32px rgb(218, 236, 249);
+  transform: translateY(-4px) scale(1.03);
+}
+
+main.flex-fill {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
