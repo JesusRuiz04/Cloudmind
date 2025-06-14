@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root', // Hace que el servicio esté disponible en toda la aplicación
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:5000/api/auth'; // URL base de la API de autenticación
+  private apiUrl = 'https://cloudmind.onrender.com/api/auth'; // URL base de la API de autenticación
 
   constructor(private http: HttpClient) {}
 

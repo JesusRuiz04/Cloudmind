@@ -24,7 +24,7 @@ export class MealsComponent implements OnInit {
   // Al iniciar el componente, carga las comidas e ingredientes del usuario desde el backend
   ngOnInit() {
     
-    this.http.get<any>(`/api/meals?userId=${this.userId}`).subscribe(data => {
+    this.http.get<any>(`https://cloudmind.onrender.com/api/meals?userId=${this.userId}`).subscribe(data => {
       if (data && data.meals) {
         this.meals = data.meals; // Asigna las comidas recibidas
         this.ingredients = data.ingredients || ''; // Asigna los ingredientes recibidos
@@ -34,7 +34,7 @@ export class MealsComponent implements OnInit {
 
   // Guarda las comidas y los ingredientes en el backend
   saveMeals() {
-    this.http.post('/api/meals', {
+    this.http.post('https://cloudmind.onrender.com/api/meals', {
       userId: this.userId,
       city: this.city,
       meals: this.meals,

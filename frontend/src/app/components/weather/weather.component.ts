@@ -45,7 +45,7 @@ export class WeatherComponent implements OnInit {
 
     // Si hay usuario, pide su preferencia de correos al backend
     if (this.userId) {
-      this.http.get<any>(`/api/users/${this.userId}`).subscribe({
+      this.http.get<any>(`https://cloudmind.onrender.com/api/users/${this.userId}`).subscribe({
         next: (user) => {
           this.emailEnabled = user.emailEnabled; // Actualiza el switch según la preferencia guardada
         }
@@ -55,7 +55,7 @@ export class WeatherComponent implements OnInit {
 
   // Cambia la preferencia de correos y la guarda en el backend
   toggleEmail() {
-    this.http.post('/api/users/email-preference', {
+    this.http.post('https://cloudmind.onrender.com/api/users/email-preference', {
       userId: this.userId,
       emailEnabled: this.emailEnabled
     }).subscribe({
