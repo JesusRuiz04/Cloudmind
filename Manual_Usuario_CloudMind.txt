@@ -1,0 +1,60 @@
+Manual de Usuario
+CloudMind
+
+Datos del Usuario:
+Nombre: Jesús Ruiz Muñoz
+Correo electrónico: cloudmind.oficial@gmail.com
+
+---
+
+Índice
+1. Introducción
+2. Acceso a la Plataforma
+3. Registro de Usuario
+4. Inicio de Sesión
+5. Previsión del Tiempo
+6. Planificador de Comidas
+7. Lista de Ingredientes
+8. Cierre de Sesión
+
+---
+
+1. Introducción
+CloudMind es una plataforma web que permite a los usuarios consultar la previsión del tiempo de su ciudad y planificar sus comidas semanales.
+
+2. Acceso a la Plataforma
+- Ingresa a la URL: https://jesusruiz04.github.io/Cloudmind/login
+
+3. Registro de Usuario
+- Haz clic en "Registrarse".
+- Completa los campos: correo electrónico, contraseña y ciudad.
+- Pulsa el botón "Registrarse" para crear tu cuenta.
+
+4. Inicio de Sesión
+- Ingresa tu correo electrónico y contraseña en la pantalla de inicio de sesión.
+- Pulsa el botón "Iniciar Sesión".
+
+5. Previsión del Tiempo
+- Tras iniciar sesión, accede a la sección "TIEMPO".
+- Consulta la previsión meteorológica de tu ciudad.
+- Puedes activar o desactivar la opción de recibir correos con la previsión (si está disponible).
+
+6. Planificador de Comidas
+- Accede a la sección "COMIDAS".
+- Visualiza y edita tu planificador semanal de comidas (comida y cena por día).
+- Pulsa "Guardar comidas" para almacenar los cambios.
+
+7. Lista de Ingredientes
+- En la sección de comidas, puedes escribir y guardar la lista de ingredientes semanal.
+- Pulsa "Guardar ingredientes" para almacenar la lista.
+
+8. Cierre de Sesión
+- Utiliza la opción de cerrar sesión para salir de la plataforma de forma segura.
+
+---
+
+Notas:
+- Rellena los campos en blanco con tus datos.
+- Si tienes problemas, contacta al administrador.
+
+---

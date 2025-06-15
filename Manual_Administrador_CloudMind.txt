@@ -1,0 +1,53 @@
+Manual del Administrador
+CloudMind
+
+Datos del Administrador:
+Nombre: Jesús Ruiz Muñoz
+Correo electrónico: cloudmind.oficial@gmail.com
+
+---
+
+Índice
+1. Introducción
+2. Acceso a la Plataforma
+3. Gestión de Usuarios
+4. Gestión de Comidas
+5. Consulta de Previsión del Tiempo
+6. Resolución de Problemas Comunes
+
+---
+
+1. Introducción
+CloudMind es una plataforma web que permite a los usuarios consultar la previsión del tiempo y planificar sus comidas semanales. El administrador puede gestionar usuarios y supervisar el correcto funcionamiento de la plataforma.
+
+2. Acceso a la Plataforma
+- Ingresa a la URL de acceso de la plataforma.
+- Inicia sesión con tu cuenta de administrador.
+
+3. Gestión de Usuarios
+- Los usuarios pueden registrarse con correo, contraseña y ciudad.
+- Puedes consultar la base de datos de usuarios desde el backend (MongoDB).
+
+4. Gestión de Comidas
+- Los usuarios pueden guardar y editar su planificador semanal de comidas y lista de ingredientes.
+- Puedes consultar los registros de comidas e ingredientes desde la base de datos.
+
+5. Consulta de Previsión del Tiempo
+- Los usuarios pueden consultar la previsión meteorológica de su ciudad.
+- Puedes verificar el funcionamiento de la API de tiempo desde el frontend.
+
+6. Resolución de Problemas Comunes
+- Si la plataforma no carga, revisa la conexión a internet y el estado del servidor backend.
+- Si un usuario no puede iniciar sesión, verifica sus credenciales o el estado de la base de datos.
+
+---
+
+Notas:
+- Rellena los campos en blanco con tus datos.
+- Para soporte técnico, revisa los logs del backend y la base de datos.
+
+---
+
+
+
+
